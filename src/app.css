@@ -1,0 +1,11 @@
+body { margin: 0; font-family: sans-serif; background: #f4f4f4; }
+.navbar { display: flex; justify-content: space-between; padding: 1rem 2rem; background: #333; color: white; }
+.nav-links a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
+.nav-links a:hover { color: #00d8ff; }
+.content { padding: 20px; max-width: 800px; margin: auto; }
+.page { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.card { background: #eee; margin: 10px 0; padding: 10px; border-radius: 4px; list-style: none; }
+.input-box { margin-bottom: 20px; }
+input { padding: 8px; width: 70%; }
+button { padding: 8px 15px; background: #333; color: white; border: none; cursor: pointer; }
+button:hover { background: #555; }
