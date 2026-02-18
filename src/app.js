@@ -34,7 +34,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <nav className="navbar">
-          <div className="logo">MyDevApp</div>
+          <div className="logo"> 🎠B3T4 Explore App</div>
           <div className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/blog">Blog</Link>
