@@ -20,15 +20,13 @@ const Tasks = () => {
   };
 
   return (
-    <div className="page">
-      <h1>Daftar Tugas</h1>
-      <div className="input-group">
-        <input value={newTask} onChange={(e) => setNewTask(e.target.value)} placeholder="Tambah tugas baru..." />
-        <button onClick={handleAdd}>Tambah</button>
-      </div>
-      {status === 'loading' ? <p>Loading...</p> : (
-        <ul>{items.map(task => <li key={task.id}>{task.title}</li>)}</ul>
-      )}
-    </div>
+    <>
+      <section className="home">
+        <h1>Welcome in Info Polri</h1>
+        <Link to="/about">Ke About</Link>
+      </section>
+    </>
   );
 };
+
+export default Home;
