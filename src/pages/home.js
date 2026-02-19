@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTasks } from "../features/taskSlice";
+import { addTask, fetchTasks } from "../features/taskSlice";
 
 // buat fetch data API dari taskSlice
 const Home = () => {
 	const dispatch = useDispatch();
 	const items = useSelector((state) => state.task.items);
+
 	useEffect(() => {
 		dispatch(fetchTasks());
 	}, []);
@@ -35,11 +36,10 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-
 			<section className="popular">
 				<h2>Destinasi Populer</h2>
-
 				<div className="card-grid">
+					{/* --- KELOMPOK 1: IMAGE URL --- */}
 					<div className="card">
 						<img
 							src="https://source.unsplash.com/400x300/?bali,beach"
@@ -58,6 +58,44 @@ const Home = () => {
 						<p>Mulai dari Rp 5.200.000</p>
 					</div>
 
+					{/* --- KELOMPOK 2: LOCAL IMAGE --- */}
+					<div className="card">
+						<img src="/foto/indonesia.jpeg" alt="Bali" />
+						<h3>Bali</h3>
+						<p>Mulai dari Rp 850.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/laos.jpeg" alt="Patuxai" />
+						<h3>Patuxai</h3>
+						<p>Mulai dari Rp 5.200.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/cambodia.jpeg" alt="Ankor Wat" />
+						<h3>Ankor Wat</h3>
+						<p>Mulai dari Rp 3.400.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/brunei.jpeg" alt="Sultan Mosque" />
+						<h3>Sultan Mosque</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/thailand.jpeg" alt="The Grand Palace" />
+						<h3>The Grand Palace</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/singa.jpeg" alt="Singapore" />
+						<h3>Singapore</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+
+					{/* --- KELOMPOK 3: TAMBAHAN --- */}
 					<div className="card">
 						<img
 							src="https://source.unsplash.com/400x300/?phuket"
@@ -75,15 +113,17 @@ const Home = () => {
 						<h3>Hawaii</h3>
 						<p>Mulai dari Rp 7.100.000</p>
 					</div>
-				</div>
-			</section>
-
-			{/* Buat penggunaan thunk, tinggal distyling di CSS*/}
+				</div>{" "}
+				{/* Penutup card-grid */}
+			</section>{" "}
+			{/* Penutup popular section */}
+			{/* //Buat penggunaan thunk, tinggal distyling di CSS */}
 			<section className="popular">
 				<h2>Rekomendasi Destinasi</h2>
 				<p> {JSON.stringify(items)} </p>
 			</section>
-		</div>
+			;
+		</div> // Penutup home utama
 	);
 };
 
