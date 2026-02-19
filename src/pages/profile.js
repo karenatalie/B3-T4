@@ -6,9 +6,10 @@ const Profile = () => {
   const teamMembers = [
     { 
       id: 1, 
-      name: "Karen Natalie", 
+      name: "Karen Natalie",
+      role: "create a profile pages and pagetransition", 
       github: "karenatalie",
-      project: "Build a Suppliers Dataset", 
+      project: "Build a Suppliers Dataset",
       image: "/foto/karen_pict.jpeg"
     },
     { id: 2, name: "Naladevanka Dwilifia Annisa Punto",
@@ -24,7 +25,7 @@ const Profile = () => {
     { id: 4, name: "Muhammad Akhya Fajar", 
       github: "akhyafajar", 
       project: "infoindo", 
-      image: "/foto/p4.jpg" 
+      image: "/foto/fajar.jpeg" 
     },
     { id: 5, name: "Teman 4", github: "user5", project: "Quality Assurance", image: "/images/p5.jpg" }
   ];
@@ -50,9 +51,10 @@ const Profile = () => {
                 </div>
                 <div className="member-info">
                   <h3>{member.name}</h3>
-                  <a href={`https://github.com/${member.github}`} target="_blank" rel="noreferrer">@{member.github}</a>
+                  <a href={`https://github.com/${member.github}`} target="_blank" rel="noreferrer">@{member.github}
+                  </a>
                   <div className="project-box">
-                    <span>Project Terakhir:</span>
+                    <span>Last Project:</span>
                     <p>{member.project}</p>
                   </div>
                 </div>
