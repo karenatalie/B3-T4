@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTasks } from "../features/taskSlice";
+import { fetchDestinations } from "../features/taskSlice";
 
 // buat fetch data API dari taskSlice
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
 	const items = useSelector((state) => state.task.items);
 
 	useEffect(() => {
-		dispatch(fetchTasks());
+		dispatch(fetchDestinations());
 	}, [dispatch]);
 
 	return (
