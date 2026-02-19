@@ -14,7 +14,7 @@ import { AnimatePresence } from "framer-motion";
 // IMPORT HALAMAN
 import Home from "./pages/home";
 import About from "./pages/about";
-import Blog from "./pages/blog";
+import Booking from "./pages/booking";
 import Profile from "./pages/profile";
 import faq from "./pages/faq";
 
@@ -58,6 +58,14 @@ function App() {
 						<Link to="/about">About</Link>
 						<Link to="/profile">Profile</Link>
 						<Link to="/faq">FAQ</Link>
+						{/* <span style={{color:"yellow"}}>DEBUG</span> */}
+					</div>
+
+					<div className="nav-links">
+						<Link to="/">Home</Link>
+						<Link to="/booking">Booking</Link>
+						<Link to="/about">About</Link>
+						<Link to="/profile">Profile</Link>
 						{/* <span style={{color:"yellow"}}>DEBUG</span> */}
 					</div>
 				</nav>
