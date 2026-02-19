@@ -1,0 +1,118 @@
+/* --- Faq.css --- */
+/* Mengambil palet warna dari desain referensi */
+:root {
+  --bg-gradient-start: #FCE5E6; /* Pink pastel */
+  --bg-gradient-end: #DDEEF8;   /* Biru pastel */
+  --accent-start: #6229EE;      /* Ungu gelap */
+  --accent-end: #9267FE;        /* Ungu terang */
+  --text-dark: #161926;         /* Hitam navy */
+  --bg-white: #FFFFFF;          /* Putih card */
+}
+
+/* Membungkus seluruh halaman FAQ dengan background gradasi */
+.faq-page {
+  min-height: calc(100vh - 60px); 
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+}
+
+.faq-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.faq-header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(22, 25, 38, 0.04);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active {
+  box-shadow: 0 15px 35px rgba(98, 41, 238, 0.15);
+  transform: translateY(-2px);
+}
+
+.faq-question {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.faq-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-white);
+  border: 2px solid #EBEBEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-icon-wrapper {
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  border: none;
+}
+
+.faq-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  color: var(--bg-white);
+}
+
+.faq-answer-wrapper {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.faq-answer-wrapper.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-answer {
+  padding: 0 24px 24px 24px;
+  color: var(--text-dark);
+  opacity: 0.85;
+  line-height: 1.6;
+}
