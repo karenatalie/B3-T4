@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts, addManual } from '../store'; // Perhatikan ../ karena naik 1 folder
 
-const Blog = () => {
+const Booking = () => {
   const dispatch = useDispatch();
-  const { items, status } = useSelector((state) => state.blog);
+  const { items, status } = useSelector((state) => state.booking);
   const [newTitle, setNewTitle] = useState('');
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Blog = () => {
 
   return (
     <div className="page">
-      <h1>📝 Blog Posts</h1>
+      <h1>📝 Booking</h1>
       <div className="input-box">
         <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
         <button onClick={() => { dispatch(addManual(newTitle)); setNewTitle(''); }}>Tambah</button>
@@ -25,4 +25,5 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Booking;
+

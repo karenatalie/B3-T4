@@ -14,7 +14,7 @@ import { AnimatePresence } from "framer-motion";
 // IMPORT HALAMAN
 import Home from "./pages/home";
 import About from "./pages/about";
-import Blog from "./pages/blog";
+import Booking from "./pages/booking";
 import Profile from "./pages/profile";
 
 const AnimatedRoutes = () => {
@@ -24,7 +24,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
@@ -52,7 +52,7 @@ function App() {
 
           <div className="nav-links">
             <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
+            <Link to="/booking">Booking</Link>
             <Link to="/about">About</Link>
             <Link to="/profile">Profile</Link>
             {/* <span style={{color:"yellow"}}>DEBUG</span> */}

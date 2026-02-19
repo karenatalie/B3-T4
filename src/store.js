@@ -29,6 +29,6 @@ const dataSlice = createSlice({
 export const { addManual } = dataSlice.actions; 
 export const store = configureStore({
   reducer: {
-    blog: dataSlice.reducer
+    booking: dataSlice.reducer
   }
 });
