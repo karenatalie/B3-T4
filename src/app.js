@@ -62,13 +62,6 @@ function App() {
 						{/* <span style={{color:"yellow"}}>DEBUG</span> */}
 					</div>
 
-					<div className="nav-links">
-						<Link to="/">Home</Link>
-						<Link to="/booking">Booking</Link>
-						<Link to="/about">About</Link>
-						<Link to="/profile">Profile</Link>
-						{/* <span style={{color:"yellow"}}>DEBUG</span> */}
-					</div>
 				</nav>
 
 				<div className="content">
