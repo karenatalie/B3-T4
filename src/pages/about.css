@@ -1,0 +1,213 @@
+/* --- LAYOUT UTAMA --- */
+.about-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+.about-content {
+  flex: 1; /* Memastikan footer tetap di bawah jika konten sedikit */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* --- SECTION 1: HERO (TEMA PASTEL) --- */
+.about-hero {
+  background: linear-gradient(135deg, #FCE5E6, #DDEEF8);
+  padding: 80px 20px;
+  text-align: center;
+  color: #2d3436;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+/* --- SECTION 2: VISI & MISI --- */
+.vision-mission {
+  text-align: center;
+}
+
+.vision-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+.vision-mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #636e72;
+  line-height: 1.8;
+}
+
+/* --- SECTION 3: CURRENT PROJECT (NEW) --- */
+.current-project {
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin-bottom: 40px;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.badge {
+  background: #0984e3;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tech-stack {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-stack li {
+  background: #dfe6e9;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- SECTION 4: SUPPORT & CARDS --- */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.support-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* --- SECTION 5: OFFICE --- */
+.office-card {
+  background: #2d3436;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* --- FOOTER (COMPACT & SOLID BACKGROUND) --- */
+.main-footer {
+  background-color: #1a1a1a; /* Background gelap agar terpisah */
+  color: #dfe6e9;
+  padding: 40px 0 20px;
+  border-top: 4px solid #fce5e6; /* Aksen pemisah pastel */
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-logo span {
+  color: #61dafb;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #b2bec3;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.footer-column ul li a:hover {
+  color: #61dafb;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.75rem;
+  color: #636e72;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-wrapper {
+    flex-direction: column-reverse;
+  }
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+}
