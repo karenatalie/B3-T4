@@ -27,7 +27,10 @@ const Profile = () => {
       project: "infoindo", 
       image: "/foto/fajar.jpeg" 
     },
-    { id: 5, name: "Teman 4", github: "user5", project: "Quality Assurance", image: "/images/p5.jpg" }
+    { id: 5, name: "Zeiniah", 
+      github: "zeyniaa", 
+      project: "Quran Signal Detection", 
+      image: "/foto/zeiniah.jpeg" }
   ];
 
   return (
