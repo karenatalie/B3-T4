@@ -1,0 +1,105 @@
+/* Main container */
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Support section */
+.support-section {
+  margin-bottom: 60px;
+}
+
+.support-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.support-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.support-section li {
+  margin-bottom: 10px;
+}
+
+.support-section a {
+  text-decoration: none;
+  color: #1db954; /* Spotify green */
+  font-weight: 500;
+}
+
+.support-section a:hover {
+  text-decoration: underline;
+}
+
+/* Office section */
+.office-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Office card */
+.office-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.office-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.office-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.office-card p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.office-card a {
+  font-size: 14px;
+  color: #1db954;
+  text-decoration: none;
+}
+
+.office-card a:hover {
+  text-decoration: underline;
+}
