@@ -116,8 +116,8 @@ const Home = () => {
 				</div>{" "}
 				{/* Penutup card-grid */}
 			</section>{" "}
-			{/* Penutup popular section */}
-			{/* //Buat penggunaan thunk, tinggal distyling di CSS */}
+			{/* Penutup popular section
+			//Buat penggunaan thunk, tinggal distyling di CSS */}
 			<section className="popular">
 				<h2>Rekomendasi Destinasi</h2>
 				<p> {JSON.stringify(items)} </p>
