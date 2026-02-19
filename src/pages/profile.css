@@ -16,11 +16,13 @@
   text-align: center;
 }
 
-.profile-header h1{
-  /* Arah: ke kanan (to right), warna 1, warna 2 */
-  font-family: 'Our Creative Team', cursive;
-  font-weight: 700;
-  text-align: center;
+.profile-header p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  max-width: 700px; /* Membatasi lebar teks agar rapi di tengah */
+  margin: 1px auto 0; /* Jarak atas 10px, kiri-kanan auto agar center */
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #555; /* Warna abu gelap supaya mata nyaman membaca */
 }
 
 /* Main Grid */
@@ -101,7 +103,7 @@
 /* Footer */
 .profile-footer {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background: #2d3436;
   color: #888;
   font-size: 0.9rem;
