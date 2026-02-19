@@ -18,11 +18,11 @@ import { Link } from "react-router-dom";
 
 // penggunaan useState dan UseEffect
 const About = () => {
-	const [visitor, setVisitor] = useState("Yorobun!");
+	const [visitor] = useState("Yorobun!");
 
 	useEffect(() => {
 		alert(`Hello ${visitor}`);
-	}, []);
+	}, [visitor]);
 
 	return (
 		<div className="contact-container">

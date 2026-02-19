@@ -39,5 +39,6 @@ export const { addManual } = dataSlice.actions;
 export const store = configureStore({
 	reducer: {
 		booking: dataSlice.reducer,
+		task: taskReducer,
 	},
 });

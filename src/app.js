@@ -16,20 +16,21 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Booking from "./pages/booking";
 import Profile from "./pages/profile";
-import faq from "./pages/faq";
+import Faq from "./pages/faq";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
 
 	return (
 		<AnimatePresence mode="wait">
-			<Routes location={location} key={location.pathname}>
-				<Route path="/" element={<Home />} />
-				{/* <Route path="/blog" element={<Blog />} /> */}
-				<Route path="/about" element={<About />} />
-				<Route path="/profile" element={<Profile />} />
-				<Route path="/faq" element={<faq />} />
-			</Routes>
+				<Routes location={location} key={location.pathname}>
+					<Route path="/" element={<Home />} />
+					{/* <Route path="/blog" element={<Blog />} /> */}
+					<Route path="/about" element={<About />} />
+					<Route path="/booking" element={<Booking />} />
+					<Route path="/profile" element={<Profile />} />
+					<Route path="/faq" element={<Faq />} />
+				</Routes>
 		</AnimatePresence>
 	);
 };
