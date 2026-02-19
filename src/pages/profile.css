@@ -1,0 +1,108 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+.profile-header {
+  /* Arah: ke kanan (to right), warna 1, warna 2 */
+  font-family: 'Our Creative Team', cursive;
+  font-weight: 1000;
+  background: linear-gradient(to right, #FCE5E6, #DDEEF8);
+  color: Black;
+  padding: 180px 20px;
+  text-align: center;
+}
+
+.profile-header h1{
+  /* Arah: ke kanan (to right), warna 1, warna 2 */
+  font-family: 'Our Creative Team', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Main Grid */
+.profile-container {
+  flex: 1; /* Biar footer selalu di bawah */
+  max-width: 1200px;
+  margin: -40px auto 40px; /* Narik grid ke atas header sedikit */
+  padding: 0 20px;
+}
+
+.profile-grid {
+  display: grid;
+  /* Membuat grid otomatis yang rapi untuk 5 orang */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Member Card */
+.member-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+}
+
+.img-box {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #61dafb;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.member-info a {
+  color: #0984e3;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-box {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.project-box span {
+  font-size: 0.7rem;
+  color: #888;
+  font-weight: bold;
+}
+
+.project-box p {
+  font-size: 0.85rem;
+  margin: 5px 0 0;
+  color: #444;
+}
+
+/* Footer */
+.profile-footer {
+  text-align: center;
+  padding: 30px;
+  background: #2d3436;
+  color: #888;
+  font-size: 0.9rem;
+}
