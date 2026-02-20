@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchFaqData } from '../store';
+import { fetchFaqData } from '../features/faqSlice';
 import './faq.css';
 
 const Faq = () => {
