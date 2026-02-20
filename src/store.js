@@ -43,27 +43,27 @@ export const fetchFaqData = createAsyncThunk("faq/fetch", async () => {
         setTimeout(() => {
             resolve([
                 {
-                    q: "Bagaimana cara memesan tiket destinasi?",
-                    a: "Sangat mudah! Pilih destinasi yang Anda inginkan, tentukan tanggal kunjungan dan jumlah tiket, isi data pemesan, lalu selesaikan pembayaran. E-tiket akan langsung muncul di halaman Profile Anda."
+                    q: "How do I book a destination ticket?",
+                    a: "It's very easy! Choose your desired destination, select the visit date and number of tickets, fill in the buyer details, and complete the payment. Your e-ticket will instantly appear on your Profile page."
                 },
                 {
-                    q: "Apakah saya bisa memesan tiket untuk hari yang sama (Go-Show)?",
-                    a: "Bisa, selama kuota tiket di destinasi tersebut masih tersedia. Namun, kami sangat menyarankan Anda memesan minimal H-1 sebelum kunjungan agar perjalanan lebih tenang."
+                    q: "Can I book a ticket for the same day (Go-Show)?",
+                    a: "Yes, as long as the ticket quota for the destination is still available. However, we highly recommend booking at least 1 day before your visit for a smoother trip."
                 },
                 {
-                    q: "Metode pembayaran apa saja yang diterima?",
-                    a: "Kami menerima pembayaran melalui Transfer Bank, Virtual Account (BCA, Mandiri, BNI), e-Wallet (GoPay, OVO, DANA), dan Kartu Kredit."
+                    q: "What payment methods are accepted?",
+                    a: "We accept payments via Bank Transfer, Virtual Accounts (BCA, Mandiri, BNI), e-Wallets (GoPay, OVO, DANA), and Credit Cards."
                 },
                 {
-                    q: "Apakah bisa membatalkan pesanan atau reschedule?",
-                    a: "Reschedule dan refund bisa dilakukan maksimal H-3 sebelum tanggal kunjungan, bergantung pada kebijakan masing-masing destinasi wisata. Biaya admin mungkin berlaku."
+                    q: "Can I cancel my booking or reschedule?",
+                    a: "Rescheduling and refunds can be done up to 3 days before the visit date, depending on the policy of each tourist destination. Admin fees may apply."
                 },
                 {
-                    q: "Apakah E-tiket harus dicetak (di-print)?",
-                    a: "Tidak perlu. Anda cukup menunjukkan E-tiket berupa Barcode/QR Code langsung dari layar HP Anda ke petugas di pintu masuk destinasi."
+                    q: "Do I need to print the E-ticket?",
+                    a: "No need. You can simply show the E-ticket (Barcode/QR Code) directly from your smartphone screen to the staff at the destination entrance."
                 }
             ]);
-        }, 1000); // Delay 1 detik seolah-olah loading dari internet
+        }, 1000); // Delay 1 second
     });
 });
 

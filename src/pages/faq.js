@@ -28,7 +28,7 @@ const Faq = () => {
         
         <div className="faq-header">
           <h1>Frequently Asked Questions</h1>
-          <p>Temukan jawaban untuk perjalanan impianmu bersama B3T4 Explore.</p>
+          <p>Find answers for your dream journey with B3T4 Explore</p>
         </div>
 
         {/* Tampilan saat Redux Thunk sedang memproses data (Simulasi Loading) */}
