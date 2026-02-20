@@ -8,11 +8,10 @@ const Footer = () => {
 			<div className="footer-container">
 				<div className="footer-column">
 					<h3 className="footer-logo">
-						MyDev<span>App</span>
+						B3T4<span> Explore</span>
 					</h3>
 					<p className="footer-desc">
-						Membangun solusi digital inovatif dengan kolaborasi
-						kreativitas mahasiswa.
+						Made by Group 4 of KADA Batch 3
 					</p>
 				</div>
 				{/* FOOTER DISINI */}
@@ -25,10 +24,10 @@ const Footer = () => {
 				<div className="footer-column">
 					<h4>Address</h4>
 					<p>
-						Gedung B3-T4, Lantai 2<br />
+						B3-T4 Building, 2nd Floor<br />
 						Jl. Teknologi Kampus No. 101
 						<br />
-						Bekasi, Jawa Barat
+						Bekasi, West Java
 					</p>
 				</div>
 			</div>
@@ -64,10 +63,8 @@ const About = () => {
 							<span className="badge">Featured Project</span>
 							<h2>B3-T4 Web Explore</h2>
 							<p>
-								B3-T4 merupakan sebuah platform web yang
-								memudahkan pelanggan untuk membooking keperluan
-								perjalanan dengan memberikan rekomendasi
-								destinasi di setiap negara.
+								B3-T4 is a web platform that makes it easy for travelers to book 
+								their trips through curated destination recommendations worldwide.
 							</p>
 							<ul className="tech-stack">
 								<li>Easy to use</li>
@@ -99,7 +96,7 @@ const About = () => {
 						</Link>
 						<a href="#" className="support-card">
 							<div className="icon">🌐</div>
-							<h3>Komunitas</h3>
+							<h3>Community</h3>
 							<p>Join and discuss with us!</p>
 						</a>
 						<a
@@ -115,9 +112,6 @@ const About = () => {
 						</a>
 					</div>
 				</section>
-
-				{/* SECTION 4: OFFICE */}
-				<section className="office-section container"></section>
 			</div>
 
 			<Footer />

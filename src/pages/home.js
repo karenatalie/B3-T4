@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
+<<<<<<< HEAD
 import { fetchTasks } from "../features/taskSlice";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom"; // ✅ TAMBAH INI
+=======
+import { fetchDestinations } from "../features/taskSlice";
+>>>>>>> 528640a9c1a1c3cb88ab0cc1d137cbd4dded5aa8
 
 const Home = () => {
 	const dispatch = useDispatch();
@@ -11,7 +15,7 @@ const Home = () => {
 	const [activeCard, setActiveCard] = useState(null);
 
 	useEffect(() => {
-		dispatch(fetchTasks());
+		dispatch(fetchDestinations());
 	}, [dispatch]);
 
 	return (
@@ -161,6 +165,44 @@ const Home = () => {
 				</div>
 			</section>
 
+<<<<<<< HEAD
+=======
+					<div className="card">
+						<img src="/foto/thailand.jpeg" alt="The Grand Palace" />
+						<h3>The Grand Palace</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+
+					<div className="card">
+						<img src="/foto/singa.jpeg" alt="Singapore" />
+						<h3>Singapore</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+
+					{/* --- KELOMPOK 3: TAMBAHAN --- */}
+					<div className="card">
+						<img
+							src="https://source.unsplash.com/400x300/?phuket"
+							alt="Phuket"
+						/>
+						<h3>Phuket</h3>
+						<p>Mulai dari Rp 3.400.000</p>
+					</div>
+
+					<div className="card">
+						<img
+							src="https://source.unsplash.com/400x300/?hawaii"
+							alt="Hawaii"
+						/>
+						<h3>Hawaii</h3>
+						<p>Mulai dari Rp 7.100.000</p>
+					</div>
+				</div>{" "}
+				{/* Penutup card-grid */}
+			</section>{" "}
+			{/* Penutup popular section
+			//Buat penggunaan thunk, tinggal distyling di CSS */}
+>>>>>>> 528640a9c1a1c3cb88ab0cc1d137cbd4dded5aa8
 			<section className="popular">
 				<h2>Rekomendasi Destinasi</h2>
 				<p> {JSON.stringify(items)} </p>
