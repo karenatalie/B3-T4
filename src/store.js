@@ -4,6 +4,9 @@ import {
 	createAsyncThunk,
 } from "@reduxjs/toolkit";
 import taskReducer from "./features/taskSlice";
+import destinationReducer from "./features/destinationSlice";
+
+
 
 // TAMBAHKAN 'export' DI SINI
 export const fetchPosts = createAsyncThunk("posts/fetch", async () => {
@@ -89,5 +92,6 @@ export const store = configureStore({
 		booking: dataSlice.reducer,
 		task: taskReducer,
 		faq: faqSlice.reducer,
+        destination: destinationReducer,
 	},
 });

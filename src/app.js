@@ -17,6 +17,8 @@ import About from "./pages/about";
 import Booking from "./pages/booking";
 import Profile from "./pages/profile";
 import Faq from "./pages/faq";
+import Continents from "./pages/continents";
+import Destinations from "./pages/destinations";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -25,11 +27,14 @@ const AnimatedRoutes = () => {
 		<AnimatePresence mode="wait">
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home />} />
+					<Route path="/continents" element={<Continents />} />
+                    <Route path="/continents/:continentId" element={<Destinations />} />
 					{/* <Route path="/blog" element={<Blog />} /> */}
 					<Route path="/about" element={<About />} />
 					<Route path="/booking" element={<Booking />} />
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/faq" element={<Faq />} />
+					
 				</Routes>
 		</AnimatePresence>
 	);
